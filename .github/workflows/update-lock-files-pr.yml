@@ -49,7 +49,7 @@ jobs:
             -f "context=update-lock-files-pr"
 
       - name: Check out the PR branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ steps.pr-head-info.outputs.pr_head_ref }}
           repository: ${{ steps.pr-head-info.outputs.pr_head_repository }}
